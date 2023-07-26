@@ -1,20 +1,18 @@
 //common store
-export default{
-    namespaced: true,
-    
-    state: {
-        demo: "",
-    },
+export default {
+  namespaced: true,
 
-    //store.commit & devtools & synchronous
-    mutations: {
-        setDemo(state, demo) {
-            state.demo = demo;
-        },
-    },
+  state: {
+    demo: "",
+  },
 
-    //store.dispatch & asynchronous backend api
-    actions: {
-
+  //store.commit & devtools & synchronous
+  mutations: {
+    setDemo(state, demo) {
+      state.demo = demo;
     },
+  },
+
+  //store.dispatch & asynchronous backend api
+  actions: {},
 };
